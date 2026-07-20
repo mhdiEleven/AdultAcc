@@ -5,7 +5,10 @@ const hiddenElements = document.querySelectorAll('.hidden');
 const valueElements = document.querySelectorAll('.value');
 const fill = document.querySelector('.fill');
 const btn = document.getElementById('btn');
-
+const perc = document.getElementById("percenty")
+hiddenElements.forEach(el => {
+        el.style.display = 'none';
+    });
 // ---- HIDE / SHOW ----
 function setHidden(state) {
     hiddenElements.forEach(el => {
@@ -42,7 +45,8 @@ function updateUI() {
     }
 
     valueElements.forEach(el => {
-        el.innerHTML = `Cash: $${cash} (${percent.toFixed(1)}% used)`;
+        el.innerHTML = `${cash}.00da`;
+        perc.innerHTML = `${percent.toFixed(1)}% من المصروف اليومي `
     });
 }
 

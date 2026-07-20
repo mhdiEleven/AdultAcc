@@ -72,7 +72,7 @@ a{
   height: 103px;
 }
 .profile img{
-  height: 40px;
+  height: 60px;
 }
 .gold{
   color: #F2A93B !important;
@@ -104,8 +104,8 @@ a{
   margin-left: 55%;
 }
 .small img{
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   background-color:transparent;
 }
 .small svg{
@@ -119,6 +119,7 @@ a{
   height: 100px; 
   border-radius: 70px;
 }
+
 .desc{
   justify-self: right;
 }
@@ -219,6 +220,9 @@ h1{
   color: black;
 }
 .flex0{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px;
   display: flex;
   flex-direction: column;
